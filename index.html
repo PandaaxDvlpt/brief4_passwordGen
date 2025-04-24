@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Générateur de mot de passe</title>
+  <style>
+    body { 
+        font-family: Arial; 
+        padding: 20px; 
+        max-width: 500px; 
+        margin: auto; 
+    }
+    input, button { 
+        margin: 10px 0; 
+        width: 100%; 
+        padding: 10px; 
+    }
+    #passwordDisplay { margin-top: 15px;
+         font-weight: bold; 
+         background: #f0f0f0; 
+         padding: 10px; 
+        } div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        } .btn {
+        width: 480px;
+        text-align: center;
+        }
+  </style>
+</head>
+<body>
+  <h1>Générateur de mot de passe</h1>
+  <label for="length">Longueur du mot de passe (12 - 128) :</label>
+  <input class="btn" type="number" id="length" min="12" max="128" value="12">
+  <div>
+    <label><input type="checkbox" id="lowercase" checked>Minuscules</label>
+    <label><input type="checkbox" id="uppercase" checked>Majuscules</label>
+    <label><input type="checkbox" id="symbols" checked>Symboles</label>
+    <label><input type="checkbox" id="numbers" checked>Chiffres</label>
+  </div>
+  <button id="generateBtn">Générer</button>
+  <div id="passwordDisplay">Votre mot de passe apparaîtra ici</div>
+  <script src="/assets/script.js"></script>
+</body>
+</html>
