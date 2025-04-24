@@ -84,7 +84,7 @@ function generatePassword() {
         display.textContent = "Veuillez sélectionner au moins un type de caractère.";
         return;
     }
-
+ //z
     let password = '';
     for (let i = 0; i < length; i++) {
         const index = Math.floor(Math.random() * chars.length);
